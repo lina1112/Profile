@@ -1,0 +1,177 @@
+<html>
+
+<head>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 8;
+            padding: 0;
+            overflow: hidden;
+            background-color: #122871;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        .button {
+            background-color: #122871;
+            border: none;
+        }
+
+        * {
+            margin: 0;
+        }
+
+        .mytabs {
+            display: flex;
+            float: left;
+            flex-wrap: wrap;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 25px;
+        }
+
+        .mytabs input[type="radio"] {
+            display: none;
+        }
+
+        .mytabs label {
+            padding: 25px;
+            background: #d8ba93;
+            font-weight: bold;
+        }
+
+        .mytabs .tab {
+            width: 100%;
+            padding: 40px;
+            background: #fff;
+            order: 1;
+            display: none;
+        }
+
+        .mytabs .tab h2 {
+            font-size: 3em;
+        }
+
+        .mytabs input[type='radio']:checked+label+.tab {
+            display: block;
+        }
+
+        .mytabs input[type="radio"]:checked+label {
+            background: #fff;
+        }
+
+        table,
+        th,
+        td {
+            border: solid 1px orange;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 75%;
+        }
+
+        th,
+        td {
+            padding: 10px;
+        }
+
+        table.alt tr:nth-child(odd) {
+            background-color: #eee;
+        }
+
+        table.alt tr:nth-child(even) {
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a class="active" href="index.html"><button>Home</button></a></li>
+        <li><a class="active" href="contact.html"><button>Contact</button></a></li>
+        <li><a class="active" href="cheatsheet2.html"><button>Cheatsheet</button></a></li>
+    </ul>
+    <div class="mytabs">
+        <input type="radio" id="cheatsheet" name="mytabs" checked="checked">
+        <label for="cheatsheet">HTML</label>
+        <div class="tab">
+            <table>
+                <tr>
+                    <th>Tags</th>
+                    <th>Attributes</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>blah</td>
+                    <td>blah</td>
+                    <td>blah</td>
+                </tr>
+            </table>
+        </div>
+
+        <input type="radio" id="tabsilver" name="mytabs">
+        <label for="tabsilver">CSS</label>
+        <div class="tab">
+            <table>
+                <tr>
+                    <th>Selector</th>
+                    <th>ID</th>
+                </tr>
+                <tr>
+                    <td>blah</td>
+                    <td>blah</td>
+                </tr>
+            </table>
+        </div>
+
+        <input type="radio" id="tabgold" name="mytabs">
+        <label for="tabgold">Command lines</label>
+        <div class="tab">
+            <table>
+                <tr>
+                    <th>CD</th>
+                    <th>Md</th>
+                    <th>Echo.></th>
+                </tr>
+                <tr>
+                    <td>blah</td>
+                    <td>blah</td>
+                    <td>blah</td>
+                </tr>
+            </table>
+
+        </div>
+
+        <input type="radio" id="tabbronze" name="mytabs">
+        <label for="tabbronze">Batch Files</label>
+        <div class="tab">
+            <table>
+                <tr>
+                    <th>Commands</th>
+                    <th>files</th>
+
+                </tr>
+                <tr>
+                    <td>blah</td>
+                    <td>blah</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
