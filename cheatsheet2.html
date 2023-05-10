@@ -38,7 +38,7 @@
             display: flex;
             float: left;
             flex-wrap: wrap;
-            max-width: 600px;
+            max-width: 800px;
             margin: 50px auto;
             padding: 25px;
         }
@@ -55,7 +55,7 @@
 
         .mytabs .tab {
             width: 100%;
-            padding: 40px;
+            padding: 50px;
             background: #fff;
             order: 1;
             display: none;
@@ -81,7 +81,7 @@
 
         table {
             border-collapse: collapse;
-            width: 75%;
+            width: 95%;
         }
 
         th,
@@ -203,6 +203,86 @@
                     </td>
                 </tr>
             </table>
+    </div>
+    <input type="radio" id="tab6" name="mytabs">
+    <label for="tab6">Go</label>
+    <div class="tab">
+        <table>
+            <tr>
+                <th>Commands</th>
+                <th>Descripitions</th>
+
+            </tr>
+            <tr>
+                <td>How to declare + assign variables</td>
+                <td>var declares a variable then you choose what to assign it to.
+                    E.g. var name string = "leah"</td>
+            </tr>
+            <tr>
+                <td>Short assignment</td>
+                <td>(:=) shorthand for declare and assign.
+                     (=) to assign</td>
+            </tr>
+            <tr>
+                <td>if/else statements</td>
+                <td>This is used to carry out code if a condition is true or false.
+                    <br>
+                    E.g. if name == "leah" { <br>
+                        // do this code if condition is true <br>
+                    } else { <br>
+                        // do this code if condition is false <br>
+                    } 
+                </td>
+            </tr>
+            <tr>
+                <td>For Loops </td>
+                <td>The for loop is used when you want to repeat the same code a specified number of times. 
+                    It can take 3 statements <br>
+                    E.g. package main<br>
+                    import ("fmt")<br>
+                    <br>
+                    func main() { <br>
+                      for i:=0; i < 5; i++ { <br>
+                        fmt.Println(i) <br>
+                       }<br>
+                    }<br>
+                    The first statement(i=0) sets the value at 0 . <br>
+                    The second Evaluates each loop, if its true it continues if not the loop ends.<br>
+                    The last statement (i++)increases the loop counter value by 1 each time.
+                
+                </td>
+            </tr>
+            <tr>
+                <td>Functions</td>
+                <td>To create a function you need to use the func keyword, 
+                    specify a name for the function the add ().<br>
+                    add your code that defines what the function should do, inside curly braces {} <br>
+                    E.g. func FunctionName() { <br>
+                        // block of code to execte <br>      
+                    } <br>
+                    After creating your function you need to call it <br>
+                    E.g. package main<br>
+                        import ("fmt")<br>
+                        <br>
+                        func main() { <br>
+                        FunctionName() // this calls the function <br>
+                        }<br>
+                    func FunctionName() { <br>
+                        // block of code to execte <br>      
+                    } <br>
+                </td>
+            </tr>
+            <tr>
+                <td>go mod init</td>
+                <td>this command does </td>
+            </tr>
+            <tr>
+                <td>How to run go code</td>
+                <td>open a command prompt or terminal and navigate 
+                    to the directory where you saved your go file. when located enter :
+                    go run (name of file) . (dont forget the fullstop)</td>
+            </tr>
+        </table>
     </div>
 </body>
 
